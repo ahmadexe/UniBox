@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".NustEngWindow">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="87dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="58dp"
+        android:layout_marginBottom="48dp"
+        android:onClick="ApplicationNust"
+        app:layout_constraintBottom_toTopOf="@+id/nustHecRank"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/niicm" />
+
+    <ImageView
+        android:id="@+id/nustInternationalRank"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="205dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="11dp"
+        android:onClick="intRankingQS"
+        app:layout_constraintBottom_toTopOf="@+id/nustMeriCalculator"
+        app:layout_constraintEnd_toStartOf="@+id/nustHecRank"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/irank" />
+
+    <ImageView
+        android:id="@+id/nustHecRank"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="271dp"
+        android:onClick="hecRanking"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nustInternationalRank"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:srcCompat="@drawable/hrank" />
+
+    <ImageView
+        android:id="@+id/nustMeriCalculator"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="9dp"
+        android:onClick="nustMeritCalculator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/nustLocation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nustInternationalRank"
+        app:srcCompat="@drawable/mcal" />
+
+    <ImageView
+        android:id="@+id/nustLocation"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:onClick="searchMap"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nustMeriCalculator"
+        app:layout_constraintTop_toBottomOf="@+id/nustHecRank"
+        app:srcCompat="@drawable/loc" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="126dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="31dp"
+        android:layout_marginBottom="148dp"
+        android:text="Apply Now!"
+        android:textColor="#808080"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/nustHecRank"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

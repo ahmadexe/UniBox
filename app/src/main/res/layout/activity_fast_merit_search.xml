@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".FastMeritSearch">
+
+    <ImageView
+        android:id="@+id/imageView39"
+        android:layout_width="104dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/yearFast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fiicm" />
+
+    <EditText
+        android:id="@+id/yearFast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:hint="Enter year"
+        android:inputType="textPersonName"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/degreeFast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView39" />
+
+    <EditText
+        android:id="@+id/degreeFast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="Enter Degree Program"
+        android:inputType="textPersonName"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/searchFast"
+        app:layout_constraintStart_toStartOf="@+id/yearFast"
+        app:layout_constraintTop_toBottomOf="@+id/yearFast" />
+
+    <Button
+        android:id="@+id/searchFast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="27dp"
+        android:text="Search"
+        app:layout_constraintBottom_toTopOf="@+id/displayFast"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/degreeFast" />
+
+    <TextView
+        android:id="@+id/displayFast"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="43dp"
+        android:textColor="#808080"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchFast" />
+</androidx.constraintlayout.widget.ConstraintLayout>

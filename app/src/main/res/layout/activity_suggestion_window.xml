@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".SuggestionWindow">
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="315dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="131dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="90dp"
+        android:fontFamily="sans-serif-thin"
+        android:gravity="center"
+        android:text="Pick a Domain"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView44"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView43"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="MedicalSuggestionOpen"
+        app:layout_constraintBottom_toTopOf="@+id/imageView45"
+        app:layout_constraintEnd_toStartOf="@+id/imageView44"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mdlogo" />
+
+    <ImageView
+        android:id="@+id/imageView44"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="17dp"
+        android:onClick="EngSuggest"
+        app:layout_constraintBottom_toTopOf="@+id/imageView45"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView43"
+        app:layout_constraintTop_toBottomOf="@+id/textView19"
+        app:srcCompat="@drawable/xyzabc" />
+
+    <ImageView
+        android:id="@+id/imageView45"
+        android:layout_width="223dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="ItSuggest"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView43"
+        app:srcCompat="@drawable/itl" />
+</androidx.constraintlayout.widget.ConstraintLayout>

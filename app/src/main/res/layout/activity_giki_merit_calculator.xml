@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".GikiMeritCalculator">
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="81dp"
+        android:layout_height="86dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="47dp"
+        app:layout_constraintBottom_toTopOf="@+id/testMarksGiki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/gikiicm" />
+
+    <EditText
+        android:id="@+id/testMarksGiki"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Marks in SAT"
+        android:inputType="number"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/marksFscGiki"
+        app:layout_constraintEnd_toStartOf="@+id/testTotalGiki"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView6" />
+
+    <EditText
+        android:id="@+id/marksFscGiki"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Marks in FSc."
+        android:inputType="number"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/marksMatricGiki"
+        app:layout_constraintEnd_toStartOf="@+id/fscTotalGiki"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testMarksGiki" />
+
+    <EditText
+        android:id="@+id/marksMatricGiki"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="47dp"
+        android:ems="10"
+        android:hint="Marks in Matric"
+        android:inputType="number"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/resultDisplayGiki"
+        app:layout_constraintEnd_toStartOf="@+id/matricTotalGiki"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marksFscGiki" />
+
+    <EditText
+        android:id="@+id/testTotalGiki"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="182dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:hint="Total Marks in SAT"
+        android:inputType="number"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/fscTotalGiki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/testMarksGiki"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fscTotalGiki"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Total Marks in FSc."
+        android:inputType="number"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/matricTotalGiki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/marksFscGiki"
+        app:layout_constraintTop_toBottomOf="@+id/testTotalGiki" />
+
+    <EditText
+        android:id="@+id/matricTotalGiki"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="349dp"
+        android:ems="10"
+        android:hint="Total Marks in Matric"
+        android:inputType="number"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/marksMatricGiki"
+        app:layout_constraintTop_toBottomOf="@+id/fscTotalGiki" />
+
+    <TextView
+        android:id="@+id/resultDisplayGiki"
+        android:layout_width="341dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="50dp"
+        android:textColor="#808080"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/calculateResultGiki"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/marksMatricGiki" />
+
+    <Button
+        android:id="@+id/calculateResultGiki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="134dp"
+        android:text="Calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultDisplayGiki" />
+</androidx.constraintlayout.widget.ConstraintLayout>

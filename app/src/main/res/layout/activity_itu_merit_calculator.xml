@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ItuMeritCalculator">
+
+    <ImageView
+        android:id="@+id/imageView35"
+        android:layout_width="80dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="46dp"
+        app:layout_constraintBottom_toTopOf="@+id/matricItu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ituiicm" />
+
+    <EditText
+        android:id="@+id/matricItu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="11dp"
+        android:ems="10"
+        android:hint="Marks in matric"
+        android:inputType="number"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/fscItu"
+        app:layout_constraintEnd_toStartOf="@+id/matricTotalItu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView35" />
+
+    <EditText
+        android:id="@+id/matricTotalItu"
+        android:layout_width="194dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:hint="Total Marks in matric"
+        android:inputType="number"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/fscTotalItu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/matricItu"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fscItu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Marks in FSc."
+        android:inputType="number"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/testItu"
+        app:layout_constraintEnd_toStartOf="@+id/fscTotalItu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matricItu" />
+
+    <EditText
+        android:id="@+id/fscTotalItu"
+        android:layout_width="193dp"
+        android:layout_height="49dp"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:hint="Total Marks in FSc."
+        android:inputType="number"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/testTotalItu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fscItu"
+        app:layout_constraintTop_toBottomOf="@+id/matricTotalItu" />
+
+    <EditText
+        android:id="@+id/testItu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Marks in SAT/ITU test"
+        android:inputType="number"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/interviewItu"
+        app:layout_constraintEnd_toStartOf="@+id/testTotalItu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fscItu" />
+
+    <EditText
+        android:id="@+id/testTotalItu"
+        android:layout_width="195dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="9dp"
+        android:ems="10"
+        android:hint="Total Marks in Test"
+        android:inputType="number"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/interviewTotalItu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/testItu"
+        app:layout_constraintTop_toBottomOf="@+id/fscTotalItu" />
+
+    <EditText
+        android:id="@+id/interviewItu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="27dp"
+        android:ems="10"
+        android:hint="Marks in Interview"
+        android:inputType="number"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/showResultItu"
+        app:layout_constraintEnd_toStartOf="@+id/interviewTotalItu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testItu" />
+
+    <EditText
+        android:id="@+id/interviewTotalItu"
+        android:layout_width="191dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="290dp"
+        android:ems="10"
+        android:hint="Total Marks in Interview"
+        android:inputType="number"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/interviewItu"
+        app:layout_constraintTop_toBottomOf="@+id/testTotalItu" />
+
+    <TextView
+        android:id="@+id/showResultItu"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="33dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="22dp"
+        android:textColor="#808080"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/calculateItu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/interviewItu" />
+
+    <Button
+        android:id="@+id/calculateItu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="131dp"
+        android:text="Calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showResultItu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MedicalSuggestion">
+
+    <ImageView
+        android:id="@+id/imageView46"
+        android:layout_width="93dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toTopOf="@+id/fscMedicalSuggestion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/mdlogo" />
+
+    <EditText
+        android:id="@+id/fscMedicalSuggestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:ems="10"
+        android:hint="Marks in FSc."
+        android:inputType="number"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/matricMedicalSuggestion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView46" />
+
+    <EditText
+        android:id="@+id/matricMedicalSuggestion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="38dp"
+        android:ems="10"
+        android:hint="Marks in matric"
+        android:inputType="number"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/fieldMedical"
+        app:layout_constraintStart_toStartOf="@+id/fscMedicalSuggestion"
+        app:layout_constraintTop_toBottomOf="@+id/fscMedicalSuggestion" />
+
+    <Button
+        android:id="@+id/fieldMedical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        android:text="Get a field"
+        app:layout_constraintBottom_toTopOf="@+id/displayFieldMedical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matricMedicalSuggestion" />
+
+    <TextView
+        android:id="@+id/displayFieldMedical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="47dp"
+        android:textColor="#808080"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fieldMedical" />
+</androidx.constraintlayout.widget.ConstraintLayout>

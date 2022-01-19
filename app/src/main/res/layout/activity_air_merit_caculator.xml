@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/matricTotalAir"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".AirMeritCaculator">
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="92dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/matricAir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/auic" />
+
+    <EditText
+        android:id="@+id/matricAir"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        android:ems="10"
+        android:hint="Marks in Matric"
+        android:inputType="number"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/fscAir"
+        app:layout_constraintEnd_toStartOf="@+id/totalMatricMarksAir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView17" />
+
+    <EditText
+        android:id="@+id/totalMatricMarksAir"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="182dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:ems="10"
+        android:hint="Total marks in matric"
+        android:inputType="number"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/fscTotalAir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/matricAir"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fscAir"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Marks In FSc."
+        android:inputType="number"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/testAir"
+        app:layout_constraintEnd_toStartOf="@+id/fscTotalAir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matricAir" />
+
+    <EditText
+        android:id="@+id/fscTotalAir"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Total marks in FSc."
+        android:inputType="number"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/testTotalAir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fscAir"
+        app:layout_constraintTop_toBottomOf="@+id/totalMatricMarksAir" />
+
+    <EditText
+        android:id="@+id/testAir"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="43dp"
+        android:ems="10"
+        android:hint="Marks in Entry Test"
+        android:inputType="number"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/resultAir"
+        app:layout_constraintEnd_toStartOf="@+id/testTotalAir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fscAir" />
+
+    <EditText
+        android:id="@+id/testTotalAir"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="359dp"
+        android:ems="10"
+        android:hint="Total Marks in Test"
+        android:inputType="number"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/testAir"
+        app:layout_constraintTop_toBottomOf="@+id/fscTotalAir" />
+
+    <TextView
+        android:id="@+id/resultAir"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="53dp"
+        android:textColor="#808080"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/calculateAir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testAir" />
+
+    <Button
+        android:id="@+id/calculateAir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="153dp"
+        android:text="Calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultAir" />
+</androidx.constraintlayout.widget.ConstraintLayout>

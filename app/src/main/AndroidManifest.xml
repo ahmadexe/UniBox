@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.unibox">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.UniBox">
+        <activity android:name=".ITSuggestion"
+            android:label="Suggestions"
+            android:parentActivityName=".SuggestionWindow"></activity>
+        <activity
+            android:name=".EngineeringSuggestion"
+            android:label="Suggestions"
+            android:parentActivityName=".SuggestionWindow" />
+        <activity
+            android:name=".MedicalSuggestion"
+            android:label="Suggestions"
+            android:parentActivityName=".SuggestionWindow" />
+        <activity
+            android:name=".SuggestionWindow"
+            android:label="Pick a domain!"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PmcMeritSearch"
+            android:label="Search Merit"
+            android:parentActivityName=".MeritCalculatorPmc" />
+        <activity
+            android:name=".PucitMeritSearch"
+            android:label="Search Merit"
+            android:parentActivityName=".PucitMeritCalculator" />
+        <activity
+            android:name=".FastMeritSearch"
+            android:label="Search Merit"
+            android:parentActivityName=".FastMeritCalculator" />
+        <activity
+            android:name=".ComsatsSearchMerit"
+            android:label="Search Merit"
+            android:parentActivityName=".ComsatsMeritCalculator" />
+        <activity
+            android:name=".UetMeritSearch"
+            android:label="Search Merits"
+            android:parentActivityName=".UetMeritCalculator" />
+        <activity
+            android:name=".PieasMeritSearch"
+            android:label="Search Merits"
+            android:parentActivityName=".PieasMeritCalculator" />
+        <activity
+            android:name=".MeritCalculatorPmc"
+            android:label="Merit Calculator"
+            android:parentActivityName=".PmcWindow" />
+        <activity
+            android:name=".PmcWindow"
+            android:label="PMC - Medical"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MeritCalculatorAku"
+            android:label="Merit Calculator"
+            android:parentActivityName=".AkuWindow" />
+        <activity
+            android:name=".AkuWindow"
+            android:label="Aga Khan University"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MeritCalculatorIba"
+            android:label="Merit Calculator"
+            android:parentActivityName=".IbaWindow" />
+        <activity
+            android:name=".IbaWindow"
+            android:label="IBA"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MeritCalculatorLums"
+            android:label="Merit Calculator"
+            android:parentActivityName=".LumsWindow" />
+        <activity
+            android:name=".LumsWindow"
+            android:label="LUMS"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PucitMeritCalculator"
+            android:label="Merit Calculator"
+            android:parentActivityName=".PucitWindow" />
+        <activity
+            android:name=".PucitWindow"
+            android:label="PUCIT"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ItuMeritCalculator"
+            android:label="Merit Calculator"
+            android:parentActivityName=".ItuMeritCalculator" />
+        <activity
+            android:name=".ItuWindow"
+            android:label="ITU"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FastMeritCalculator"
+            android:label="Merit Calculator"
+            android:parentActivityName=".FastWindow" />
+        <activity
+            android:name=".FastWindow"
+            android:label="FAST"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ComsatsMeritCalculator"
+            android:label="Merit Calculator"
+            android:parentActivityName=".ComsatsWindow" />
+        <activity
+            android:name=".ComsatsWindow"
+            android:label="COMSATS"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AirMeritCaculator"
+            android:label="Merit Calculator"
+            android:parentActivityName=".AirUniversityWindow" />
+        <activity
+            android:name=".AirUniversityWindow"
+            android:label="AIR University"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".UetMeritCalculator"
+            android:label="Merit Calculator"
+            android:parentActivityName=".UetWindow" />
+        <activity
+            android:name=".UetWindow"
+            android:label="UET"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".GikiMeritCalculator"
+            android:label="Merit Calculator"
+            android:parentActivityName=".GikiWindow" />
+        <activity
+            android:name=".GikiWindow"
+            android:label="GIKI"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".PieasMeritCalculator"
+            android:label="Merit Calculator"
+            android:parentActivityName=".PieasWindow" />
+        <activity
+            android:name=".PieasWindow"
+            android:label="PIEAS"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MeritCalculatorNust"
+            android:label="Merit Calculator"
+            android:parentActivityName=".NustEngWindow" />
+        <activity
+            android:name=".NustEngWindow"
+            android:label="NUST"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

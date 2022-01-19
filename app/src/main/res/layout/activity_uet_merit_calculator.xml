@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".UetMeritCalculator">
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="97dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginBottom="59dp"
+        app:layout_constraintBottom_toTopOf="@+id/matricUET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ueticm" />
+
+    <EditText
+        android:id="@+id/matricUET"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Marks in Matric"
+        android:inputType="textPersonName"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/ecatUET"
+        app:layout_constraintEnd_toStartOf="@+id/matricTotalUET"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
+
+    <EditText
+        android:id="@+id/matricTotalUET"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="198dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="Total Marks in Matric"
+        android:inputType="textPersonName"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/ecatUETTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/matricUET"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ecatUET"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="41dp"
+        android:ems="10"
+        android:hint="Marks in ECAT"
+        android:inputType="textPersonName"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/resultDisplayUET"
+        app:layout_constraintEnd_toStartOf="@+id/ecatUETTotal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matricUET" />
+
+    <EditText
+        android:id="@+id/ecatUETTotal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="402dp"
+        android:ems="10"
+        android:hint="Total Marks in ECAT"
+        android:inputType="textPersonName"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ecatUET"
+        app:layout_constraintTop_toBottomOf="@+id/matricTotalUET" />
+
+    <TextView
+        android:id="@+id/resultDisplayUET"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginEnd="37dp"
+        android:layout_marginBottom="65dp"
+        android:textColor="#808080"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/calculateUET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ecatUET" />
+
+    <Button
+        android:id="@+id/calculateUET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="174dp"
+        android:text="Calculate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultDisplayUET" />
+
+    <Button
+        android:id="@+id/openUetMeritSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openingUetMeritWindow"
+        android:text="Page 2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/calculateUET" />
+</androidx.constraintlayout.widget.ConstraintLayout>

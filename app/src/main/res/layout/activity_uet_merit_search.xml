@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".UetMeritSearch">
+
+    <ImageView
+        android:id="@+id/imageView37"
+        android:layout_width="103dp"
+        android:layout_height="91dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginBottom="57dp"
+        app:layout_constraintBottom_toTopOf="@+id/yearUet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ueticm" />
+
+    <EditText
+        android:id="@+id/yearUet"
+        android:layout_width="252dp"
+        android:layout_height="74dp"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:hint="Enter the year"
+        android:inputType="textPersonName"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/degreeUet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView37" />
+
+    <EditText
+        android:id="@+id/degreeUet"
+        android:layout_width="251dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="29dp"
+        android:ems="10"
+        android:hint="Enter the program"
+        android:inputType="textPersonName"
+        android:textColor="#808080"
+        android:textColorHint="#808080"
+        app:layout_constraintBottom_toTopOf="@+id/searchUet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yearUet" />
+
+    <Button
+        android:id="@+id/searchUet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:text="Search"
+        app:layout_constraintBottom_toTopOf="@+id/displayUet"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/degreeUet" />
+
+    <TextView
+        android:id="@+id/displayUet"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="39dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="41dp"
+        android:textColor="#808080"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchUet" />
+</androidx.constraintlayout.widget.ConstraintLayout>

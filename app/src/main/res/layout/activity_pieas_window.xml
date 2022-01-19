@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".PieasWindow">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="114dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="29dp"
+        android:onClick="applicationPieas"
+        app:layout_constraintBottom_toTopOf="@+id/pieasIntRank"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/piicm" />
+
+    <ImageView
+        android:id="@+id/pieasIntRank"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="280dp"
+        android:onClick="intRankingQSPieas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pieasHecRank"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9"
+        app:srcCompat="@drawable/irank" />
+
+    <ImageView
+        android:id="@+id/pieasHecRank"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="187dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="hecRankingPieas"
+        app:layout_constraintBottom_toTopOf="@+id/pieasLocation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pieasIntRank"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/hrank" />
+
+    <ImageView
+        android:id="@+id/pieasMeritCalculator"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="pieasMeritCalculatorWindowOpen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pieasLocation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pieasIntRank"
+        app:srcCompat="@drawable/mcal" />
+
+    <ImageView
+        android:id="@+id/pieasLocation"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="searchMapPieas"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/pieasMeritCalculator"
+        app:layout_constraintTop_toBottomOf="@+id/pieasHecRank"
+        app:srcCompat="@drawable/loc" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="110dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="134dp"
+        android:text="Apply Now!"
+        android:textColor="#808080"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/pieasIntRank"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
